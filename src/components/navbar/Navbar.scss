@@ -1,16 +1,17 @@
 .navbar{
     display: flex;
+    position: sticky;
+    top: 0;
     align-items: center;
     background-color: rgb(0, 155, 142);
     color: white;
     flex-direction: column;
     transition: 0.5s all ease;
-    position: sticky;
-    top: 0;
     z-index: 999;
     &.active{
         background-color: #fff;
         color:black;
+        
     }
     .container{
         width: 1200px;
@@ -83,11 +84,12 @@
            
         }
     }
-    hr{
-        width: 100px;
+    hr {
+        width: calc(100% - 2px);
         height: 0;
-        border: 0.5px solid lightgray;
-    }
+        border-top: 0.5px solid #ebe9e9;
+        border-bottom: 0.5px solid #ebe9e9;
+      }
     .menu{
         width: 1200px;
         padding: 10px 0px;
